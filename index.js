@@ -43,7 +43,7 @@ app.post('/ventilator/status',middleware.checkToken,(req,res) =>{
 //SEARCH  Ventilator by Hospital name
 app.post('/ventilator/Hname',middleware.checkToken,(req,res) => {
     console.log("Search-ventilator by hospital name");
-    var n1 =req.query.name;
+    var n1 =req.body.name;
     var ventilatordetail = db.collection('Ventilator').find({'name':new RegExp(n1,'i')})
     .toArray().then(result => res.json(result));
 });
@@ -51,7 +51,7 @@ app.post('/ventilator/Hname',middleware.checkToken,(req,res) => {
 //SEARCH Hospital by name
 app.post('/hospital/name',middleware.checkToken,(req,res)=>{
     console.log("Search-hospital by name");
-    var n2=req.query.name;
+    var n2=req.body.name;
     var hospitaldetails=db.collection('Hospital').find({'name':new RegExp(n2,'i')})
     .toArray().then(result=>res.json(result));
 });
@@ -80,9 +80,9 @@ app.post('/ventilator/adduser',middleware.checkToken, (req,res) => {
 
 //Delete Ventilator by ventilatorid
 app.delete('/ventilator/delete',middleware.checkToken,(req,res) => {
-    var query1 = req.query.ventid;
-    var query2 = { ventilatorId: query1 };
-    db.collection('Ventilator').deleteOne(query2,function (err,obj)
+    var d1 = req.body.ventid;
+    var d2 = { ventilatorId: d1 };
+    db.collection('Ventilator').deleteOne(d2,function (err,obj)
     {
         if(err) throw err;
         res.json("Document deleted from ventilator collection");
