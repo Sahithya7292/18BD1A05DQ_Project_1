@@ -81,7 +81,7 @@ app.post('/ventilator/adduser',middleware.checkToken, (req,res) => {
 //Delete Ventilator by ventilatorid
 app.delete('/ventilator/delete',middleware.checkToken,(req,res) => {
     var d1 = req.body.ventid;
-    var d2 = { ventilatorId: d1 };
+    var d2 = { ventid: d1 };
     db.collection('Ventilator').deleteOne(d2,function (err,obj)
     {
         if(err) throw err;
