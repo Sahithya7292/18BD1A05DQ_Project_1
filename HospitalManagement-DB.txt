@@ -1,0 +1,16 @@
+HospitalManagement.Hospital
+{"_id":"5f758db9f4c6fb88412912cd","hid":10,"name":"Care Hospital","address":"123/7RT,Hno-1563,Main Road,Banjara Hills","location":"17.39864, 78.48433","contact":9879879879}
+{"_id":"5f758eb4f4c6fb88412912ce","hid":11,"name":"JayaBhushan Hospital","address":"1/7RT,Hno-17963,Post office Road,Uppal","location":"15.39644, 79.48334","contact":9898987789}
+{"_id":"5f758f20f4c6fb88412912cf","hid":12,"name":"Nice Hospital","address":"56/2RT,Hno-1583,St Ann's School road,Secundarabad","location":"27.398644, 95.48734","contact":9998887771}
+{"_id":"5f758f66f4c6fb88412912d0","hid":133,"name":"Rohan Hospital","address":"10-03-253,Hno-72,St Ann's College road,Mehidapatnam","location":"17.39864, 78.48334","contact":9991177722}
+{"_id":"5f758fb3f4c6fb88412912d1","hid":14,"name":"Rainbow Hospital","address":"10-03-273/52,Hno-976,Opp Bank Of Baorada,Punjagutta","location":"17.38699, 78.82134","contact":9696963214}
+HospitalManagement.Ventilator
+{"_id":"5f75930c47ec5134209fd06c","hid":"10","ventid":921,"status":"available","name":"Care Hospital"}
+{"_id":"5f75935847ec5134209fd06d","hid":"14","ventid":532,"status":"maintance","name":"Rainbow Hospital"}
+{"_id":"5f75938a47ec5134209fd06e","hid":"14","ventid":111,"status":"available","name":"Rainbow Hospital"}
+{"_id":"5f7593b147ec5134209fd06f","hid":"14","ventid":423,"status":"available","name":"Rainbow Hospital"}
+{"_id":"5f7593d847ec5134209fd070","hid":"12","ventid":999,"status":"occuiped","name":"Nice Hospital"}
+{"_id":"5f773af5d57c8d0200a5827b","hid":133,"ventid":500,"status":"available","name":"Rohan Hospital"}
+{"_id":"5f773d3e91557d291893a47a","hid":133,"ventid":20,"status":"available","name":"Rohan Hospital"}
+{"_id":"5f7757522d4f7627b45c70ac","hid":"111","ventid":162,"status":"maintance","name":"Rainbow Hospital"}
+{"_id":"5f7757642d4f7627b45c70ad","hid":"111","ventid":2,"status":"maintance","name":"Rainbow Hospital"}
